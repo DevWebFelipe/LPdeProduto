@@ -30,7 +30,6 @@
 
   /* Do espaço total que sobrar, vai jogar metade para cada margem lateral */
   margin-inline: auto;
-  border: solid violet;
 }
 
 .desktop-only {
@@ -46,8 +45,23 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-1 {
   gap: 1rem;
+}
+
+/* por padrão, o ponto indica o início do nome de uma classe, mas caso queira usar o ponto
+   como parte do nome da classe, pode-se usar a barra como um escape, isso permitirá
+   que o ponto seja usado como parte do nome da classe */
+.gap-1\.5 {
+  gap: 1.5rem;
 }
 
 .grid {
