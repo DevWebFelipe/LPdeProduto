@@ -1,0 +1,24 @@
+.container {
+  --max-width: 375px;
+
+  /* Vai pegar o mínimo entre o --max-width e o cálculo, que é de 100% da
+     largura disponível menos 2x o espaço de margem (direita e esquerda) 
+     então se a tela for de 400px, vai ficar 375px ou (400 - 24 * 2 = 352)
+     nesse exemplo, a menor largura é de 352, então é isso que vai aplicar
+     agora se a tela tem 600px, vai ficar 375px ou (600 - 24 * 2 = 552)
+     nesse exemplo, a menor largura é de 375px, então é isso que vai aplicar 
+     outra forma de fazer seria:
+     max-width: var(--max-width)
+     width: calc(100% - var(--px-lg) * 2) */
+  width: min(var(--max-width), (100% - (var(--px-lg) * 2)));
+
+  /* Do espaço total que sobrar, vai jogar metade para cada margem lateral */
+  margin-inline: auto;
+  border: solid violet;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+}
