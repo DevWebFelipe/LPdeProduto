@@ -7,6 +7,7 @@
 @import url(sections.css);
 @import url(about.css);
 @import url(cards.css);
+@import url(pricing.css);
 
 /* usando essa condicional, essa unit só vai ser importada
    quando for desktop, então lá dentro, não precisa de media
