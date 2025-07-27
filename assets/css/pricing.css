@@ -112,8 +112,12 @@
       font-size: var(--fs-base);
     }
 
-    & .card:nth-child(3) .separator {
-      margin-block: 1.5rem;
+    & .free {
+      margin-top: 1.5rem;
+    }
+
+    & .family {
+      margin-top: 1.2rem;
     }
   }
 }
